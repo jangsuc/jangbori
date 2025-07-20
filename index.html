@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="장보리 보리밥 - 건강한 한식의 새로운 경험">
+    <meta name="theme-color" content="#ffffff">
+    <title>장보리 보리밥</title>
+    
+    <!-- Fonts -->
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NEXON Lv1 Gothic OTF.woff" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo_new.png" alt="장보리 로고">
+                <span class="brand-name">장보리 보리밥</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu" class="nav-link">특선메뉴</a></li>
+                    <li><a href="#kids-menu" class="nav-link">어린이 메뉴</a></li>
+                    <li><a href="#single-menu" class="nav-link">단품 메뉴</a></li>
+                    <li><a href="#takeout" class="nav-link">포장메뉴</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="order-btn">주문하기</button>
+                <button class="login-btn">로그인</button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="home">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/hero01.jpg" alt="메인 이미지 1" loading="lazy">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h1>건강을 담은 보리밥 한상</h1>
+                        <p>정성껏 지은 보리밥과 신선한 제철 나물, 자극 없는 건강한 맛</p>
+                        <a href="#menu" class="cta-button">메뉴 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/hero02.jpg" alt="메인 이미지 2" loading="lazy">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h1>한국인 모두가 좋아하는 그 맛</h1>
+                        <p>부담 없이 즐겨도 든든하게 채워주는 한 끼</p>
+                        <a href="#about" class="cta-button">더 알아보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/hero03.jpg" alt="메인 이미지 3" loading="lazy">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h1>마음까지 푸근해지는 한 상</h1>
+                        <p>옛집에서 먹던 그 맛, 한 끼 식사에 담긴 정성</p>
+                        <a href="#contact" class="cta-button">예약하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- 메뉴 섹션 시작 -->
+    <!-- 특선메뉴 섹션 -->
+    <section class="menu-section special-menu" id="special-menu">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">특선메뉴</h2>
+            <p class="section-description" data-aos="fade-up">장보리의 대표 메뉴를 소개합니다</p>
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd1.jpg" alt="장보리 한상 정식" loading="lazy">
+                        <div class="menu-item-badge">인기</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>장보리 한상 정식</h3>
+                        <p>정성 가득한 보리밥과 제철 나물이 주는 건강한 포만감</p>
+                        <span class="price">15,000원</span>
+                        <button class="detail-btn" data-menu-details="보리밥 · 청국장 · 나물반찬 7종 · 제육볶음 · 김 · 간장게장 · 양념게장">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd2.jpg" alt="얼큰 소고기 육개장" loading="lazy">
+                        <div class="menu-item-badge">추천</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>얼큰 소고기 육개장</h3>
+                        <p>한 모금마다 올라오는 진한 감칠맛</p>
+                        <span class="price">12,000원</span>
+                        <button class="detail-btn" data-menu-details="얼큰한 국물에 녹아든 소고기로 속까지 뜨끈해지는 맛">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_sum.jpg" alt="도토리 묵밥 정식" loading="lazy">
+                        <div class="menu-item-badge">NEW</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>도토리 묵밥 정식</h3>
+                        <p>한 그릇에 담긴 시원한 여름의 힐링감</p>
+                        <span class="price">18,000원</span>
+                        <button class="detail-btn" data-menu-details="도토리 묵의 부드러움과 시원한 국물이 주는 여유">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd4.jpg" alt="담백 소고기 육개장X" loading="lazy">
+                        <div class="menu-item-badge">계절</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>담백 소고기 육개장X</h3>
+                        <p>특제 육수의 담백한 전골요리</p>
+                        <span class="price">16,000원</span>
+                        <button class="detail-btn" data-menu-details="깊은 국물에 녹아든 소고기로 속까지 푸근해지는 맛">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 어린이메뉴 섹션 -->
+    <section class="menu-section kids-menu" id="kids-menu">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">어린이 메뉴</h2>
+            <p class="section-description" data-aos="fade-up">아이들의 건강을 생각한 특별한 메뉴</p>
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pdK.jpg" alt="어린이 정식" loading="lazy">
+                        <div class="menu-item-badge">인기</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>어린이 정식</h3>
+                        <p>달콤 짭조름한 간장계란밥</p>
+                        <div class="menu-item-details">
+                            <div class="nutrition-info">
+                                <span>🥗 채소 3종</span>
+                                <span>🥚 계란후라이</span>
+                            </div>
+                        </div>
+                        <span class="price">8,000원</span>
+                        <button class="detail-btn" data-menu-details="달콤 짭조름한 간장계란밥으로 아이 입맛 사로잡아 귀여운 맛으로 행복한 한 입 선사">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_joo.jpg" alt="어린이 주먹밥" loading="lazy">
+                        <div class="menu-item-badge">추천</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>어린이 주먹밥</h3>
+                        <p>작지만 가득한 고소함의 즐거움</p>
+                        <div class="menu-item-details">
+                            <div class="nutrition-info">
+                                <span>🍖 국내산 돼지고기</span>
+                                <span>🥬 샐러드</span>
+                            </div>
+                        </div>
+                        <span class="price">9,000원</span>
+                        <button class="detail-btn" data-menu-details="고소한 멸치가 톡톡 씹히는 주먹밥 한 입의 행복">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_don.jpg" alt="돈까스 정식" loading="lazy">
+                        <div class="menu-item-badge">영양만점</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>돈까스 정식</h3>
+                        <p>바삭한 튀김옷 속 부드러운 고기</p>
+                        <div class="menu-item-details">
+                            <div class="nutrition-info">
+                                <span>🥘 반찬 6종</span>
+                                <span>🍲 미니국</span>
+                            </div>
+                        </div>
+                        <span class="price">10,000원</span>
+                        <button class="detail-btn" data-menu-details="바삭한 튀김옷 속 부드러운 고기가 주는 든든한 만족
+한 입 베어물 때 전해지는 고소함">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 단품메뉴 섹션 -->
+    <section class="menu-section single-menu" id="single-menu">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">단품메뉴</h2>
+            <p class="section-description" data-aos="fade-up">취향에 맞게 즐기는 다양한 단품메뉴</p>
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_moon.jpg" alt="문어 숙회" loading="lazy">
+                        <div class="menu-item-badge">인기</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>문어 숙회</h3>
+                        <p>바다의 향기를 담아낸 부드러운 식감</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🐙 문어 숙회</span>
+                                <span>🥒 오이 채</span>
+                            </div>
+                        </div>
+                        <span class="price">8,500원</span>
+                        <button class="detail-btn" data-menu-details="쫄깃한 문어의 은은한 단맛이 입안을 촉촉히 감싸">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_go.jpg" alt="고등어 구이" loading="lazy">
+                        <div class="menu-item-badge">추천</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>고등어 구이</h3>
+                        <p>입안에 퍼지는 고소한 바다의 기쁨</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🍚 공기밥 포함</span>
+                                <span>🥬 반찬 3종</span>
+                            </div>
+                        </div>
+                        <span class="price">8,500원</span>
+                        <button class="detail-btn" data-menu-details="겉은 바삭, 속은 촉촉! 고소한 고등어 풍미가 살아있어요">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd3.jpg" alt="도토리 묵 무침" loading="lazy">
+                        <div class="menu-item-badge">NEW</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>도토리 묵 무침</h3>
+                        <p>양념의 조화가 당기는 중독성</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🥜 견과류 토핑</span>
+                                <span>🥬 쌈채소</span>
+                            </div>
+                        </div>
+                        <span class="price">9,000원</span>
+                        <button class="detail-btn" data-menu-details="새콤달콤 매콤한 양념이 묵의 담백함을 살려줘">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_boo.jpg" alt="도토리 부침개" loading="lazy">
+                        <div class="menu-item-badge">계절</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>도토리 부침개</h3>
+                        <p>한 입 가득 살아나는 고소함</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🥚 계란</span>
+                                <span>🥩 차돌박이</span>
+                            </div>
+                        </div>
+                        <span class="price">9,500원</span>
+                        <button class="detail-btn" data-menu-details="고소한 묵 반죽에 바삭한 식감이 더해진 여름 별미">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_gae.jpg" alt="간장게장/양념게장" loading="lazy">
+                        <div class="menu-item-badge">베스트</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>간장게장/양념게장</h3>
+                        <p>밥 한 숟갈이 순삭되는 마성의 맛</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🥚 계란후라이</span>
+                                <span>🥬 나물 5종</span>
+                            </div>
+                        </div>
+                        <span class="price">9,000원</span>
+                        <button class="detail-btn" data-menu-details="짭짤한 간장 소스에 깊게 밴 꽃게 맛이 밥도둑">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/pd_jae.jpg" alt="제육볶음" loading="lazy">
+                        <div class="menu-item-badge">인기</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>제육볶음</h3>
+                        <p>매콤달콤한 양념에 손이 멈추지 않는 매력적인 양념</p>
+                        <div class="menu-item-details">
+                            <div class="menu-options">
+                                <span>🥩 국내산 한우</span>
+                                <span>🥗 미니샐러드</span>
+                            </div>
+                        </div>
+                        <span class="price">11,000원</span>
+                        <button class="detail-btn" data-menu-details="쫄깃한 돼지고기가 어우러진 밥도둑 쫄깃한 식감이 자꾸만 부르는 중독">더보기</button>
+                        <div class="menu-details">
+                            <p class="details-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 메뉴 섹션 끝 -->
+
+    <!-- 리뷰 섹션 -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">고객 리뷰</h2>
+            <div class="reviews-header" data-aos="fade-up">
+                <div class="reviews-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="stat-label">평균 평점</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2,483</span>
+                        <span class="stat-label">월간 리뷰</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">재방문율</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-grid" data-aos="fade-up">
+                <!-- 1행 -->
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_1.png" alt="보리비빔밥 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man1.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">김미영</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리비빔밥 너무 맛있어요! 건강한 맛이 느껴지는게 좋아요 😊 매일 먹고 싶은 맛이에요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.15</span>
+                                <span class="review-likes">❤️ 124</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_k.png" alt="된장찌개 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/hoo_k.png" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">이준호</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"된장찌개가 정말 구수하고 맛있어요 👍 반찬도 다양하고 특히 보리밥이 고소해요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.14</span>
+                                <span class="review-likes">❤️ 98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_pp.jpg" alt="보리전골 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man3.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">박서연</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리전골 진짜 대박! 육수가 너무 깊고 맛있어요 🔥 날씨 추울 때 생각나는 맛!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.13</span>
+                                <span class="review-likes">❤️ 156</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2행 -->
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/rev_7.jpg" alt="보리불고기 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man1.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">최동훈</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"불고기가 정말 부드럽고 맛있어요 🥩 보리밥이랑 찰떡궁합이에요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.12</span>
+                                <span class="review-likes">❤️ 142</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_f.jpg" alt="어린이메뉴 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/hoo_f.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">정혜원</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"아이가 어린이 메뉴를 정말 좋아해요 👶 건강한 재료로 만들어주셔서 감사해요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.11</span>
+                                <span class="review-likes">❤️ 89</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_t.jpg" alt="보리국수 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man3.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">김태우</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리국수 면발이 쫄깃하고 육수가 끝내줘요 🍜 더운 여름에 딱이에요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.10</span>
+                                <span class="review-likes">❤️ 167</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3행 -->
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_e.jpg" alt="보리정식 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man1.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">이지은</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리정식 구성이 알찬데 가격도 합리적이에요 💯 직원분들도 친절하시고 좋아요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.09</span>
+                                <span class="review-likes">❤️ 134</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/rev_9.jpg" alt="보리굴비 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man2.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">박현우</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리굴비가 정말 일품이에요 🐟 밑반찬도 하나하나 신경써주시는게 느껴져요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.08</span>
+                                <span class="review-likes">❤️ 145</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_z.png" alt="비빔밥 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/hoo_z.png" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">최수진</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"비빔밥 나물이 정말 신선해요 🥬 고추장도 딱 맛있게 매콤해요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.07</span>
+                                <span class="review-likes">❤️ 178</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4행 -->
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_ddd.jpg" alt="김치찌개 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man1.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">강민석</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"김치찌개 진짜 맛있어요 🔥 특히 보리밥이랑 같이 먹으면 환상이에요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.06</span>
+                                <span class="review-likes">❤️ 192</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_oo.jpg" alt="돈까스 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man2.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">임서영</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"보리돈까스 정말 특별해요 🍖 바삭하면서도 담백한 맛이 일품이에요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.05</span>
+                                <span class="review-likes">❤️ 165</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-image">
+                        <img src="images/hoo_b.jpg" alt="계절메뉴 리뷰" loading="lazy">
+                    </div>
+                    <div class="review-overlay">
+                        <div class="review-content">
+                            <div class="review-header">
+                                <img src="images/man3.jpg" alt="프로필" class="reviewer-profile">
+                                <span class="reviewer-name">윤지원</span>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">"계절메뉴가 항상 기대되는 곳이에요 🌸 매번 새로운 맛을 경험할 수 있어요!"</p>
+                            <div class="review-meta">
+                                <span class="review-date">2024.03.04</span>
+                                <span class="review-likes">❤️ 143</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">자주 묻는 질문</h2>
+            <p class="section-description" data-aos="fade-up">고객님들이 자주 문의하시는 질문들을 모았습니다</p>
+            
+            <div class="faq-list" data-aos="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">🅿️</span>
+                        <span class="question-text">주차는 가능한가요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네, 전용 주차장이 마련되어 있어 편리하게 이용하실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">👶</span>
+                        <span class="question-text">유아용 의자가 있나요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>예, 유아용 의자를 비치하여 아이와 함께 편안히 식사하실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">🍱</span>
+                        <span class="question-text">어린이 메뉴가 따로 있나요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네, 어린이 전용 메뉴가 준비되어 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">🛵</span>
+                        <span class="question-text">배달이 되나요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>예, 배달 서비스를 제공하며 주변 지역으로 배송해 드립니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">📅</span>
+                        <span class="question-text">예약을 꼭 해야 하나요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>예약 없이도 방문 가능하지만, 주말 및 연휴에는 미리 예약하시면 보다 원활하게 이용하실 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question-icon">👥</span>
+                        <span class="question-text">모임을 위한 단체석은 가능한가요?</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>네, 모임 및 회식을 위한 단체석이 마련되어 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 위치 섹션 -->
+    <section class="location" id="location">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">오시는 길</h2>
+            <div class="location-content">
+                <div class="location-info" data-aos="fade-right">
+                    <h3>장보리 보리밥</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>서울 성북구 하월곡동 18-38</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>0507-1380-6071</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>영업시간: 11:00 - 21:00</p>
+                    </div>
+                    <div class="location-details">
+                        <h4>교통안내</h4>
+                        <div class="transport-info">
+                            <div class="transport-item">
+                                <i class="fas fa-subway"></i>
+                                <p>🚇 월곡역 3번출구에서 도보 5분 이내 거리에 위치</p>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-bus"></i>
+                                <p>🅿️ 주차장 완비</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d558.7764955499455!2d127.0432607783135!3d37.60410783374537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbb7eeef3210d%3A0xbae8662a4f8b2eb8!2z7ISc7Jq47Yq567OE7IucIOyEseu2geq1rCDtlZjsm5Tqs6Hrj5kgMTgtMzg!5e0!3m2!1sko!2skr!4v1752929163176!5m2!1sko!2skr" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="images/logo_foot.png" alt="장보리 로고" class="footer-logo">
+                    <p>장보리 보리밥</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Naver Blog"><i class="fas fa-blog"></i></a>
+                        <a href="#" aria-label="KakaoTalk"><i class="fas fa-comment"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>바로가기</h3>
+                    <ul>
+                        <li><a href="#menu">메뉴</a></li>
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#location">오시는 길</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>뉴스레터 구독</h3>
+                    <p>특별한 소식과 이벤트 정보를 받아보세요</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="이메일 주소" required>
+                        <button type="submit">구독하기</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 장보리 보리밥. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
